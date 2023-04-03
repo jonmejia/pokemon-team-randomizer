@@ -3,7 +3,11 @@ import Pokemon from './Pokemon'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  interface Pokemon {
+    pokedexNumber: number;
+    name: string;
+  }
+  
 
   return (
     <div className="App">
